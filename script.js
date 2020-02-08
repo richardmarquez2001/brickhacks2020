@@ -39,3 +39,4 @@ function createCrime(position){
     }});
   app..markers.push(marker);
 }
+
