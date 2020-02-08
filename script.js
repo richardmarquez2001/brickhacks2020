@@ -14,7 +14,9 @@ function initMap() {
     );
 
   createCrime(start);
+  
   console.log(markers)
+
 }
 
 
@@ -35,3 +37,4 @@ function createCrime(position){
     }});
   app.markers.push(marker);
 }
+
