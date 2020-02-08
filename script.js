@@ -1,12 +1,8 @@
 // CREATE APP PROPERTIES
 app = {
   map: undefined,
-  markers: undefined
+  markers: [],
 }
-
-
-//
-
 
 // CREATES THE MAP FUNCTION
 function initMap() {
@@ -37,6 +33,5 @@ function createCrime(position){
         strokeWeight: 1,
         scale: 7
     }});
-  app..markers.push(marker);
+  app.markers.push(marker);
 }
-
