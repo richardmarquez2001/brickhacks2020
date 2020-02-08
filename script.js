@@ -5,6 +5,9 @@ app = {
 }
 
 
+//
+
+
 // CREATES THE MAP FUNCTION
 function initMap() {
   // FIRST LOCATION
@@ -34,5 +37,5 @@ function createCrime(position){
         strokeWeight: 1,
         scale: 7
     }});
-  app.push(marker);
+  app..markers.push(marker);
 }
