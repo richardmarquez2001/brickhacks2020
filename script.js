@@ -11,7 +11,7 @@ function initMap() {
   var start = {lat: -25.344, lng: 131.036};
   // The map, centered at Uluru
   app.map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 4, center: start}
+      document.getElementById('map'), {zoom: 4, center: start, disableDefaultUI: true}
     );
 
   createCrime(start);
@@ -19,7 +19,7 @@ function initMap() {
 }
 
 
-// CREATE CRIME MARKER FUNCTION,
+// CREATE CRIME MARKER FUNCTION, position = {lat: x, lng: y};
 function createCrime(position){
   // CREATE NEW CRIME MARKER
   var marker = new google.maps.Marker({

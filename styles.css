@@ -2,13 +2,21 @@ body{
     background-color: #8AC4FF;
     padding: 0;
     margin: 0;
+    overflow: hidden;
 }
 
 .header{
-    background-color: #8DE4FF;
-    padding-left: 1.5%;
+  background-color: #8DE4FF;
+  padding-left: 1.5%;
 }
-#map {
-  height: 400px;  /* The height is 400 pixels */
+
+.map-container{
+  height:100%;
+  display:flex;
+  background-color: orange;
+}
+#map{
+  flex:1;
+  height: 100%;  /* The height is 400 pixels */
   width: 100%;  /* The width is the width of the web page */
  }
