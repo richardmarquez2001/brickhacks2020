@@ -36,3 +36,4 @@ function createCrime(position){
     }});
   app.push(marker);
 }
+
