@@ -1,3 +1,10 @@
 body{
     background-color: #8AC4FF;
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    background-color: #8DE4FF;
+    padding-left: 1.5%;
 }
