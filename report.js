@@ -6,8 +6,8 @@ const report_menu = document.getElementById("report-menu");
 const login_menu = document.getElementById("login-menu");
 const register_menu = document.getElementById("register-menu");
 
-report_menu.style.display = "none";
-//login_menu.style.display = "none";
+//report_menu.style.display = "none";
+login_menu.style.display = "none";
 register_menu.style.display = "none";
 
 app = {
