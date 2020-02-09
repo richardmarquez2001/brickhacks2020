@@ -14,7 +14,9 @@ function initMap() {
     );
 
   createCrime(start);
+
   console.log(markers)
+
 }
 
 // CREATE CRIME MARKER FUNCTION, position = {lat: x, lng: y};

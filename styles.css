@@ -1,29 +1,26 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-body{
-
-    background-color: #8AC4FF;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+* {
     margin: 0;
-    overflow: hidden;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.header{
-  background-color: #8DE4FF;
-  padding-left: 1.5%;
+.header {
+    display: flex;
+    font-family: "Montserrat";
+    height: 50px;
+    align-items: center;
+}
+header {
+    font-size: 25px;
+    margin-left: 10px;
 }
 
-.map-container{
-  height:100%;
-  display:flex;
-  background-color: orange;
-  display:flex;
+.map-container {
+    display: flex;
+    height: calc(100vh - 50px);
+    width: 100%;
 }
-.item{
-  flex:1;
+#map {
+    flex: 1;
 }
-#map{
-  flex:3;
-  height: 100%;  /* The height is 400 pixels */
-  width: 100%;  /* The width is the width of the web page */
-
- }
