@@ -1,16 +1,15 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Get Me Home</title>
-  </head>
-  <body>
-
-    <!-- HEADER -->
-    <div class="header">
-      <header>Safe Space</header>
-      <div id="search-div">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <title>Get Me Home</title>
+    </head>
+    <body>
+        <!-- HEADER -->
+        <div class="header">
+            <header>Safe Space</header>
+            <!-- <div id="search-div">
         <i class="fas fa-search" id="search-icon" onclick="show()"></i>
         <input
           id="autocomplete"
@@ -18,96 +17,85 @@
           name="search"
           placeholder="Search..."
         />
-      </div>
-      <a onClick="tryReport()" href="#" id="post-button">Report</a>
-    </div>
-    <div id="map"></div>
-    <div class="abs" id="choose">CHOOSE LOCATION TO REPORT</div>
-    <div class="abs" id="logged">LOGGED IN</div>
-    <!-- REPORT -->
-    <div class="main-container menu" id="report-menu">
-      <form action="#" id="report-form">
-        <a onClick="closeMenu(report_menu)" href="#" id="close-button">
-          <i class="fas fa-window-close"></i>
-        </a>
-        </button>
-        <p class="topic">Post report</p>
-        <p>Incident:</p>
-        <input
-          id="crimedesc"
-          class="text-input"
-          type="text"
-          name="crime"
-          placeholder="Suspicious Activity"
-        /><br />
-        <a class="submit" href="#" onClick="tryPost()">Report!</a>
-      </form>
-    </div>
+      </div> -->
+            <a onClick="tryReport()" href="#" id="post-button">Report</a>
+        </div>
+        <div id="map"></div>
+        <div class="abs" id="choose">CHOOSE LOCATION TO REPORT</div>
+        <div class="abs" id="logged">LOGGED IN</div>
+        <!-- REPORT -->
+        <div class="main-container menu" id="report-menu">
+            <form action="#" id="report-form">
+                <a onClick="closeMenu(report_menu)" href="#" id="close-button">
+                    <i class="fas fa-window-close"></i>
+                </a>
+                <p class="topic">Post report</p>
+                <p>Incident:</p>
+                <input
+                    id="crimedesc"
+                    class="text-input"
+                    type="text"
+                    name="crime"
+                    placeholder="Suspicious Activity"
+                /><br />
+                <a class="submit" href="#" onClick="tryPost()">Report!</a>
+            </form>
+        </div>
 
-    <!-- LOGIN / REGISTER -->
-    <div class="main-container menu" id="login-menu">
-      <form action="#" id="register-form" name="register-form">
-        <a onClick="closeMenu(login_menu)" href="#" id="close-button">
-          <i class="fas fa-window-close"></i>
-        </a>
-        <p class="topic">Register</p>
-        <p>Phone Number</p>
-        <input
-          class="text-input"
-          type="text"
-          name="phone"
-        />
-        <p>Password</p>
-        <input
-          class="text-input"
-          name="password2"
-          type="password2"
-        /><br />
-        <p>Confirm Password</p>
-        <input
-          class="text-input"
-          name="password1"
-          type="password1"
-        /><br />
-        <a class="submit" href="#" onClick="tryRegister()">Register</a>
-      </form></br>
-      <form action="#" id="login-form" name="login-form">
-        <a onClick="closeMenu(login_menu)" href="#" id="close-button">
-          <i class="fas fa-window-close"></i>
-        </a>
-        <p class="topic">Login</p>
-        <p>Phone Number</p>
-        <input
-          class="text-input"
-          type="text"
-          name="phone"
-        />
-        <p>Password</p>
-        <input
-          class="text-input"
-          type="password"
-          name="password"
-        /><br />
+        <!-- LOGIN / REGISTER -->
+        <div class="main-container menu" id="login-menu">
+            <form action="#" id="register-form" name="register-form">
+                <a onClick="closeMenu(login_menu)" href="#" id="close-button">
+                    <i class="fas fa-window-close"></i>
+                </a>
+                <p class="topic">Register</p>
+                <p>Phone Number</p>
+                <input class="text-input" type="text" name="phone" />
+                <p>Password</p>
+                <input
+                    class="text-input"
+                    name="password2"
+                    type="password"
+                /><br />
+                <p>Confirm Password</p>
+                <input
+                    class="text-input"
+                    name="password1"
+                    type="password"
+                /><br />
+                <a class="submit" href="#" onClick="tryRegister()">Register</a>
+            </form>
+            <form action="#" id="login-form" name="login-form">
+                <a onClick="closeMenu(login_menu)" href="#" id="close-button">
+                    <i class="fas fa-window-close"></i>
+                </a>
+                <p class="topic">Login</p>
+                <p>Phone Number</p>
+                <input class="text-input" type="text" name="phone" />
+                <p>Password</p>
+                <input
+                    class="text-input"
+                    type="password"
+                    name="password"
+                /><br />
 
-        <a class="submit" href="#" onClick="tryLogin()">Login</a>
-      </form>
-    </div>
-
-  </body>
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script
-    src="https://kit.fontawesome.com/f10f05274e.js"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    type="text/javascript"
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpmyoKedBUoX6w6iuXGdikk-vw3Jlb0cA&libraries=places"
-  ></script>
-  <script src="report.js"></script>
-  <script type="text/javascript" src="script.js"></script>
-  <script
-    async
-    defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpmyoKedBUoX6w6iuXGdikk-vw3Jlb0cA&callback=initMap"
-  ></script>
+                <a class="submit" href="#" onClick="tryLogin()">Login</a>
+            </form>
+        </div>
+    </body>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script
+        src="https://kit.fontawesome.com/f10f05274e.js"
+        crossorigin="anonymous"
+    ></script>
+    <script
+        type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpmyoKedBUoX6w6iuXGdikk-vw3Jlb0cA&libraries=places"
+    ></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script
+        async
+        defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpmyoKedBUoX6w6iuXGdikk-vw3Jlb0cA&callback=initMap"
+    ></script>
 </html>

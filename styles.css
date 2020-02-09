@@ -37,24 +37,26 @@ header {
 #post-button:hover {
     font-weight: bold;
 }
-.firstHeading{
-  font-size: 2rem;
+.firstHeading {
+    font-size: 2rem;
 }
-.abs{
-  position:absolute;
-  color: white;
-  top:50%;
-  z-index: 100;
-  font-family: "Montserrat";
-  font-weight: 1000;
-  font-size: 2.3rem;
-  letter-spacing: 0.2rem;
-  margin:auto;
-  width:100%;
-  text-align: center;
-  display:none;
+.abs {
+    position: absolute;
+    color: white;
+    top: 50%;
+    z-index: 100;
+    font-family: "Montserrat";
+    font-weight: 1000;
+    font-size: 2.3rem;
+    letter-spacing: 0.2rem;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    display: none;
 }
-#logged{top:10%}
+#logged {
+    top: 10%;
+}
 
 .main-container {
     position: relative;
@@ -88,6 +90,7 @@ header {
 #close-button:hover {
     color: darkred;
 }
+
 #search-input {
     background-color: none;
     border-radius: 5px;
