@@ -10,12 +10,16 @@
     font-family: "Montserrat";
     height: 50px;
     align-items: center;
+    border-bottom: black solid 1px;
 }
 header {
     font-size: 25px;
     margin-left: 10px;
 }
-
+form {
+    border: black solid 1px;
+    padding: 10px;
+}
 .map-container {
     display: flex;
     height: calc(100vh - 50px);
