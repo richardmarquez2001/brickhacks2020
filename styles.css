@@ -1,41 +1,41 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .header {
-  display: flex;
-  font-family: "Montserrat";
-  height: 50px;
-  border-bottom: black solid 2px;
-  background-color: white;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    font-family: "Montserrat";
+    height: 50px;
+    border-bottom: black solid 2px;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header {
-  font-size: 25px;
-  margin-left: 10px;
-  font-weight: bold;
+    font-size: 25px;
+    margin-left: 10px;
+    font-weight: bold;
 }
 
 #search-input {
-  padding-left: 10px;
+    padding-left: 10px;
 }
 
 #post-button {
-  background-color: transparent;
-  border: none;
-  font-family: "Montserrat";
-  font-size: 20px;
-  margin-right: 10px;
-  color: black;
-  text-decoration: none;
+    background-color: transparent;
+    border: none;
+    font-family: "Montserrat";
+    font-size: 20px;
+    margin-right: 10px;
+    color: black;
+    text-decoration: none;
 }
 #post-button:hover {
-  font-weight: bold;
+    font-weight: bold;
 }
 .abs{
   position:absolute;
@@ -54,15 +54,15 @@ header {
 #logged{top:10%}
 
 .main-container {
-  position: relative;
-  height: auto;
-  width: 100%;
+    position: relative;
+    height: auto;
+    width: 100%;
 }
 
 .menu {
     background-color: white;
     font-family: "Montserrat";
-    width:15rem;
+    width: 15rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -74,76 +74,71 @@ header {
 }
 
 #close-button {
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  background-color: transparent;
-  border: none;
-  color: black;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: transparent;
+    border: none;
+    color: black;
 }
 
 #close-button:hover {
-  color: darkred;
+    color: darkred;
 }
 #search-input {
-  background-color: none;
-  border-radius: 5px;
-  height: 3.5vh;
-  width: 20vh;
+    background-color: none;
+    border-radius: 5px;
+    height: 3.5vh;
+    width: 20vh;
 }
 
 #search-input:hover {
-  width: 29vh;
-  height: 4.4vh;
+    width: 29vh;
+    height: 4.4vh;
 }
 
 input {
-  font-family: "Montserrat";
-  background-color: #efefef;
-  border: none;
-  transition: all 0.3s;
+    font-family: "Montserrat";
+    background-color: #efefef;
+    border: none;
+    transition: all 0.3s;
 }
 
 .text-input {
-  margin-bottom: 10px;
-  border-bottom: #efefef solid 1px;
-  border-radius: 5px;
-  padding: 3px;
-  width: 22vh;
+    margin-bottom: 10px;
+    border-bottom: #efefef solid 1px;
+    border-radius: 5px;
+    padding: 3px;
 }
 
-.text-input:hover {
-  width: 27vh;
-}
-.submit-input {
-  margin-top: 5px;
-  border-top: black solid 1px;
-  border-bottom: black solid 1px;
-  border-radius: 5px;
-  font-weight: bold;
-  width: 27vh;
-  height: 4vh;
+.submit {
+    background-color: #efefef;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-.submit-input:hover {
-  width: 31vh;
-  height: 4.4vh;
+.submit:hover {
+    border-bottom: black solid 1px;
 }
+
 .topic {
-  font-size: 30px;
+    font-size: 30px;
 }
 
 input:hover {
-  border-color: black;
+    border-color: black;
 }
 
 input:focus {
-  outline: none;
+    outline: none;
 }
 
 #map {
-  position: absolute;
-  height: calc(100vh - 50px);
-  width: 100%;
-  z-index: 0;
+    position: absolute;
+    height: calc(100vh - 50px);
+    width: 100%;
+    z-index: 0;
 }
