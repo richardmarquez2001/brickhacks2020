@@ -51,7 +51,7 @@
 
     <!-- LOGIN / REGISTER -->
     <div class="main-container menu" id="login-menu">
-      <form action="#">
+      <form action="#" id="register-form" name="register-form">
         <a onClick="closeMenu(login_menu)" href="#" id="close-button">
           <i class="fas fa-window-close"></i>
         </a>
@@ -60,21 +60,21 @@
         <input
           class="text-input"
           type="text"
-          name="address"
+          name="phone"
         />
         <p>Password</p>
         <input
           class="text-input"
-          name="crime"
-          type="password"
+          name="password2"
+          type="password2"
         /><br />
         <p>Confirm Password</p>
         <input
           class="text-input"
-          name="crime"
-          type="password"
+          name="password1"
+          type="password1"
         /><br />
-        <input class="submit-input" type="submit" value="Register" />
+        <a href="#" onClick="tryRegister()">Register</a>
       </form></br>
       <form action="#" id="login-form" name="login-form">
         <a onClick="closeMenu(login_menu)" href="#" id="close-button">
