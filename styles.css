@@ -10,7 +10,8 @@
     font-family: "Montserrat";
     height: 50px;
     align-items: center;
-    border-bottom: black solid 1px;
+    border-bottom: black solid 2px;
+    background-color: rgb(173, 188, 255);
 }
 
 header {
@@ -25,14 +26,45 @@ header {
 }
 
 form {
+    background-color: rgb(173, 188, 255);
+    font-family: "Montserrat";
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -80%);
-    border: black solid 1px;
-    background-color: white;
+    border: black solid 2px;
     padding: 20px;
     z-index: 1;
+}
+
+input {
+    font-family: "Montserrat";
+    transition: all 0.3s;
+}
+
+.text-input {
+    margin-bottom: 10px;
+    background-color: rgb(193, 204, 255);
+    border: none;
+    border-bottom: black solid 1px;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.submit-input {
+    margin-top: 5px;
+    background-color: rgb(193, 204, 255);
+    border: none;
+    border-top: black solid 1px;
+    border-bottom: black solid 1px;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 100%;
+}
+
+input:hover {
+    border-color: white;
+    border-width: 2px;
 }
 
 #map {
