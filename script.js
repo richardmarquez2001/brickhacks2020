@@ -21,7 +21,7 @@ function initMap() {
 
 // Gets the lang and longitude values based
 function getCoord(){
-    
+
 
 }
 // CREATE CRIME MARKER FUNCTION, position = {lat: x, lng: y};
