@@ -37,11 +37,10 @@ form {
   z-index: 1;
 }
 
-#post {
-  float: right;
+#post-button {
+  display: inline;
   padding-left: 70%;
   font-family: "Montserrat";
-  font-size: 20;
 }
 
 input {
