@@ -112,7 +112,6 @@ function initMap() {
       }
       console.log( latitude + ', ' + longitude, app.token );
   }); //end addListener
-  createCrime(start);
 };
 
 function moveToLocation(lat, lng){
