@@ -12,7 +12,7 @@ function initMap() {
   app.map = new google.maps.Map(
       document.getElementById('map'), {zoom: 16, center: start, disableDefaultUI: true}
     );
-
+  app.map.setOptions({ minZoom: 5, maxZoom: 15 });
   createCrime(start);
 
   console.log(markers)
