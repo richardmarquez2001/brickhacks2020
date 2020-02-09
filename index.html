@@ -8,6 +8,15 @@
   <body>
     <div class="header">
       <header>Safe Space</header>
+      <div id="search-div">
+        <i class="fas fa-search" id="search-icon" onclick="show()"></i>
+        <input
+          id="search-input"
+          type="text"
+          name="search"
+          placeholder="Search..."
+        />
+      </div>
       <button id="post-button">Report</button>
     </div>
     <div class="main-container">
@@ -37,6 +46,10 @@
   <script
     src="https://kit.fontawesome.com/f10f05274e.js"
     crossorigin="anonymous"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpmyoKedBUoX6w6iuXGdikk-vw3Jlb0cA&libraries=places"
   ></script>
   <script type="text/javascript" src="script.js"></script>
   <script
