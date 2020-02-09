@@ -16,9 +16,13 @@ body{
   height:100%;
   display:flex;
   background-color: orange;
+  display:flex;
+}
+.item{
+  flex:1;
 }
 #map{
-  flex:1;
+  flex:3;
   height: 100%;  /* The height is 400 pixels */
   width: 100%;  /* The width is the width of the web page */
 

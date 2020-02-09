@@ -7,16 +7,15 @@ app = {
 // CREATES THE MAP FUNCTION
 function initMap() {
   // FIRST LOCATION
-  var start = {lat: -25.344, lng: 131.036};
+  var start = {lat: 43.6532, lng: -79.3832};
   // The map, centered at Uluru
   app.map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 4, center: start, disableDefaultUI: true}
+      document.getElementById('map'), {zoom: 16, center: start, disableDefaultUI: true}
     );
 
   createCrime(start);
   console.log(markers)
 }
-
 
 // CREATE CRIME MARKER FUNCTION, position = {lat: x, lng: y};
 function createCrime(position){
@@ -24,6 +23,7 @@ function createCrime(position){
   var marker = new google.maps.Marker({
     position: position,
     map: app.map,
+    label: 'test',
     icon: {
         path: google.maps.SymbolPath.CIRCLE,
         fillColor: '#d45542',
@@ -34,4 +34,10 @@ function createCrime(position){
         scale: 7
     }});
   app.markers.push(marker);
+}
+
+// REQUEST LONG AND lat
+function submitReport(){
+  const url = 'https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyBpmyoKedBUoX6w6iuXGdikk-vw3Jlb0cA'
+  fetch(url).then(data=>{console.log(data)})
 }
