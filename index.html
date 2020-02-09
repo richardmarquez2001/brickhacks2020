@@ -17,12 +17,15 @@
           placeholder="Search..."
         />
       </div>
-      <button id="post-button">Report</button>
+      <a onClick="openReportMenu()" href="#" id="post-button">Report</a>
     </div>
-    <div class="main-container">
-      <form action="#" id="input-form" class="hide">
-        <button id="close-button">
+    <div id="map"></div>
+
+    <div class="main-container" id="report-menu">
+      <form action="#" id="input-form">
+        <a onClick="closeReportMenu()" href="#">
           <i class="fas fa-window-close"></i>
+        </a>
         </button>
         <h5>Address:</h5>
         <input
@@ -40,7 +43,6 @@
         /><br />
         <input class="submit-input" type="submit" value="Report" />
       </form>
-      <div id="map"></div>
     </div>
   </body>
   <script
