@@ -134,7 +134,7 @@ function placeAll(){
       timeout: 4000,
     }).then((res)=>{
       for(marker of res.data){
-        createCrime({lng:marker.longitude, lat:marker.latitude}, marker.crime)
+        createCrime({lng:marker.longitude, lat:marker.latitude}, marker.crime, marker.date)
       }
 
     }).catch((err)=>{})
@@ -143,7 +143,7 @@ function placeAll(){
 placeAll()
 
 // CREATE CRIME MARKER FUNCTION, position = {lat: x, lng: y};
-function createCrime(position,text){
+function createCrime(position,text,date){
   // CREATE NEW CRIME MARKER
   var marker = new google.maps.Marker({
     position: position,
@@ -158,7 +158,7 @@ function createCrime(position,text){
         scale: 7
     }
   });
-  var string = '<p id="topic" class="firstHeading">'+text+'</p>'
+  var string = '<p id="topic" class="firstHeading">'+text+'</p>'+'<p>'+date+'</p>';
   var infowindow = new google.maps.InfoWindow({
     content: string
   });
