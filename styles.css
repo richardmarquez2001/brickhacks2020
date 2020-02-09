@@ -12,19 +12,32 @@
     align-items: center;
     border-bottom: black solid 1px;
 }
+
 header {
     font-size: 25px;
     margin-left: 10px;
 }
-form {
-    border: black solid 1px;
-    padding: 10px;
-}
-.map-container {
-    display: flex;
+
+.main-container {
+    position: relative;
     height: calc(100vh - 50px);
     width: 100%;
 }
+
+form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    border: black solid 1px;
+    background-color: white;
+    padding: 20px;
+    z-index: 1;
+}
+
 #map {
-    flex: 1;
+    position: absolute;
+    height: calc(100vh - 50px);
+    width: 100%;
+    z-index: 0;
 }
