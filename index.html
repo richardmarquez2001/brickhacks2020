@@ -17,13 +17,14 @@
           placeholder="Search..."
         />
       </div>
-      <a onClick="openReportMenu()" href="#" id="post-button">Report</a>
+      <a onClick="openMenu(report_menu)" href="#" id="post-button">Report</a>
     </div>
     <div id="map"></div>
 
+    <!-- REPORT -->
     <div class="main-container" id="report-menu">
       <form action="#" id="input-form">
-        <a onClick="closeReportMenu()" href="#">
+        <a onClick="closeMenu(report_menu)" href="#">
           <i class="fas fa-window-close"></i>
         </a>
         </button>
@@ -35,6 +36,57 @@
           placeholder="123 Smith Street"
         />
         <h5>Activity:</h5>
+        <input
+          class="text-input"
+          type="text"
+          name="crime"
+          placeholder="Suspicious Activity"
+        /><br />
+        <input class="submit-input" type="submit" value="Report" />
+      </form>
+    </div>
+
+    <!-- REGISTER -->
+    <div class="main-container" id="register-menu">
+      <form action="#">
+        <a onClick="closeMenu(register_menu)" href="#">
+          <i class="fas fa-window-close"></i>
+        </a>
+        </button>
+        <h5>Address:</h5>
+        <input
+          class="text-input"
+          type="text"
+          name="address"
+          placeholder="123 Smith Street"
+        />
+        <h5>Activity:</h5>
+        <input
+          class="text-input"
+          type="text"
+          name="crime"
+          placeholder="Suspicious Activity"
+        /><br />
+        <input class="submit-input" type="submit" value="Report" />
+      </form>
+    </div>
+
+    <!-- LOGIN -->
+    <div class="main-container" id="login-menu">
+      <form action="#">
+        <a onClick="closeMenu(login_menu)" href="#">
+          <i class="fas fa-window-close"></i>
+        </a>
+        </button>
+        <p class="topic">Register</p>
+        <p>Phone Number</p>
+        <input
+          class="text-input"
+          type="text"
+          name="address"
+          placeholder="123 Smith Street"
+        />
+        <p>Password</p>
         <input
           class="text-input"
           type="text"

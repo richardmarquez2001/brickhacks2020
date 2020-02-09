@@ -95,6 +95,9 @@ input {
   font-weight: bold;
   width: 100%;
 }
+.topic{
+  font-size:30px;
+}
 
 input:hover {
   border-color: black;
