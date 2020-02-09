@@ -6,6 +6,8 @@
     <title>Get Me Home</title>
   </head>
   <body>
+
+    <!-- HEADER -->
     <div class="header">
       <header>Safe Space</header>
       <div id="search-div">
@@ -24,7 +26,7 @@
     <!-- REPORT -->
     <div class="main-container" id="report-menu">
       <form action="#" id="input-form">
-        <a onClick="tryReport()" href="#">
+        <a onClick="tryReport()" href="#" id="close-button">
           <i class="fas fa-window-close"></i>
         </a>
         </button>
@@ -46,37 +48,9 @@
       </form>
     </div>
 
-    <!-- REGISTER -->
-    <div class="main-container" id="register-menu">
-      <form action="#">
-        <a onClick="closeMenu(register_menu)" href="#">
-          <i class="fas fa-window-close"></i>
-        </a>
-        </button>
-        <h5>Address:</h5>
-        <input
-          class="text-input"
-          type="text"
-          name="address"
-          placeholder="123 Smith Street"
-        />
-        <h5>Activity:</h5>
-        <input
-          class="text-input"
-          type="text"
-          name="crime"
-          placeholder="Suspicious Activity"
-        /><br />
-        <input class="submit-input" type="submit" value="Report" />
-      </form>
-    </div>
-
-    <!-- LOGIN -->
+    <!-- LOGIN / REGISTER -->
     <div class="main-container" id="login-menu">
       <form action="#">
-        <a onClick="closeMenu(login_menu)" href="#">
-          <i class="fas fa-window-close"></i>
-        </a>
         </button>
         <p class="topic">Register</p>
         <p>Phone Number</p>
@@ -84,18 +58,24 @@
           class="text-input"
           type="text"
           name="address"
-          placeholder="123 Smith Street"
         />
         <p>Password</p>
         <input
           class="text-input"
-          type="text"
           name="crime"
-          placeholder="Suspicious Activity"
+          type="password"
         /><br />
-        <input class="submit-input" type="submit" value="Report" />
+        <p>Confirm Password</p>
+        <input
+          class="text-input"
+          name="crime"
+          type="password"
+        /><br />
+        <input class="submit-input" type="submit" value="Register" />
+        <input class="submit-input" type="submit" value="Login" />
       </form>
     </div>
+    
   </body>
   <script
     src="https://kit.fontawesome.com/f10f05274e.js"
