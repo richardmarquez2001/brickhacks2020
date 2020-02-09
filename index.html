@@ -76,7 +76,7 @@
         /><br />
         <input class="submit-input" type="submit" value="Register" />
       </form></br>
-      <form action="#">
+      <form action="#" id="login-form" name="login-form">
         <a onClick="closeMenu(login_menu)" href="#" id="close-button">
           <i class="fas fa-window-close"></i>
         </a>
@@ -85,20 +85,21 @@
         <input
           class="text-input"
           type="text"
-          name="address"
+          name="phone"
         />
         <p>Password</p>
         <input
           class="text-input"
-          name="crime"
           type="password"
+          name="password"
         /><br />
 
-        <input class="submit-input" type="submit" value="Register" />
+        <a href="#" onClick="tryLogin()">Login</a>
       </form>
     </div>
 
   </body>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script
     src="https://kit.fontawesome.com/f10f05274e.js"
     crossorigin="anonymous"
