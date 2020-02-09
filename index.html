@@ -1,40 +1,41 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Get Me Home</title>
-  </head>
-  <body>
-    <div class="header">
-      <header>Safe Space</header>
-      <button class="postbtn" id="post-button">Report</button>
-    </div>
-    <div class="main-container">
-      <form action="submit">
-        <h5>Address:</h5>
-        <input
-          class="text-input"
-          type="text"
-          name="address"
-          placeholder="123 Smith Street"
-        />
-        <h5>Activity:</h5>
-        <input
-          class="text-input"
-          type="text"
-          name="crime"
-          placeholder="Suspicious Activity"
-        /><br />
-        <input class="submit-input" type="submit" value="Report" />
-      </form>
-      <div id="map"></div>
-    </div>
-  </body>
-  <script type="text/javascript" src="script.js"></script>
-  <script
-    async
-    defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpmyoKedBUoX6w6iuXGdikk-vw3Jlb0cA&callback=initMap"
-  ></script>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <title>Get Me Home</title>
+    </head>
+    <body>
+        <div class="header">
+            <header>Safe Space</header>
+            <button id="post-button">Report</button>
+        </div>
+        <div class="main-container">
+            <form action="submit" id="input-form">
+                <h5>Address:</h5>
+                <input
+                    class="text-input"
+                    type="text"
+                    name="address"
+                    placeholder="123 Smith Street"
+                />
+                <h5>Activity:</h5>
+                <input
+                    class="text-input"
+                    type="text"
+                    name="crime"
+                    placeholder="Suspicious Activity"
+                /><br />
+                <input class="submit-input" type="submit" value="Report" />
+            </form>
+            <div id="map"></div>
+        </div>
+    </body>
+    <script type="text/javascript" src="script.js"></script>
+    <script
+        async
+        defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpmyoKedBUoX6w6iuXGdikk-vw3Jlb0cA&callback=initMap"
+    ></script>
+    <script src="report.js"></script>
 </html>
