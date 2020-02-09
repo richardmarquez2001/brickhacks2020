@@ -15,15 +15,9 @@ function initMap() {
   app.map.setOptions({ minZoom: 5, maxZoom: 25 });
   createCrime(start);
 
-  console.log(markers)
-
-}
-
-// Gets the lang and longitude values based
-function getCoord(){
+};
 
 
-}
 // CREATE CRIME MARKER FUNCTION, position = {lat: x, lng: y};
 function createCrime(position){
   // CREATE NEW CRIME MARKER

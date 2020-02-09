@@ -7,7 +7,6 @@ const register_menu = document.getElementById("register-menu");
 
 report_menu.style.display = "none";
 login_menu.style.display = "none";
-register_menu.style.display = "none";
 
 app = {
   csrf: '4#yr..~%hN%o17oJ-jg%"$-)W#V1%Z2XLZzd6z8maI^mA]*]2t.FyklY8(!KM',
@@ -29,14 +28,15 @@ async function tryPost(){
   for(var i=0; i<elem.length; i++){
     object[elem[i].name]=elem[i].value;
   };
+  fetch('https://maps.googleapis.com/maps/api/geocode/json?address='+object.address.replace(" ","+")+"&key=AIzaSyBpmyoKedBUoX6w6iuXGdikk-vw3Jlb0cA")
   axios({
       method: 'post',
-      url: 'http://127.0.0.1:3001/crimes',
+      url: 'https://safetybook.herokuapp.com/crimes',
       timeout: 4000,
       data:object
     }).then((res)=>{
-      app.token = res.data;
-      closeMenu(login_menu)
+      console.log(res)
+      closeMenu(report_menu)
     }).catch((err)=>{})
 }
 
@@ -51,7 +51,7 @@ async function tryLogin(){
   //fetch('https://safetybook.herokuapp.com/users/login', {
   axios({
       method: 'post',
-      url: 'http://127.0.0.1:3001/users/login',
+      url: 'https://safetybook.herokuapp.com/users/login',
       timeout: 4000,
       data:object
     }).then((res)=>{
@@ -72,11 +72,11 @@ async function tryRegister(){
     console.log("PASSWORDS NOT THE SAME")
   } object2 = {phone:object.phone, password:object.password1};
   object2.csrf_key = object.csrf_key
-  //fetch('https://safetybook.herokuapp.com/users/login', {
+  //fetch('', {
 console.log(object2)
   axios({
       method: 'post',
-      url: 'http://127.0.0.1:3001/users/register',
+      url: 'https://safetybook.herokuapp.com/users/register',
       timeout: 4000,
       data:object2
     }).then((res)=>{
