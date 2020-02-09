@@ -37,6 +37,9 @@ header {
 #post-button:hover {
     font-weight: bold;
 }
+.firstHeading{
+  font-size: 2rem;
+}
 .abs{
   position:absolute;
   color: white;
