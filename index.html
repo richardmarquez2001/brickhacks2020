@@ -22,24 +22,19 @@
       <a onClick="tryReport()" href="#" id="post-button">Report</a>
     </div>
     <div id="map"></div>
-
+    <div class="abs" id="choose">CHOOSE LOCATION TO REPORT</div>
+    <div class="abs" id="logged">LOGGED IN</div>
     <!-- REPORT -->
     <div class="main-container menu" id="report-menu">
-      <form action="#" id="input-form">
+      <form action="#" id="report-form">
         <a onClick="closeMenu(report_menu)" href="#" id="close-button">
           <i class="fas fa-window-close"></i>
         </a>
         </button>
         <p class="topic">Post report</p>
-        <p>Address:</p>
+        <p>Incident:</p>
         <input
-          class="text-input"
-          type="text"
-          name="address"
-          placeholder="123 Smith Street"
-        />
-        <p>Activity:</p>
-        <input
+          id="crimedesc"
           class="text-input"
           type="text"
           name="crime"
@@ -108,11 +103,11 @@
     type="text/javascript"
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpmyoKedBUoX6w6iuXGdikk-vw3Jlb0cA&libraries=places"
   ></script>
+  <script src="report.js"></script>
   <script type="text/javascript" src="script.js"></script>
   <script
     async
     defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpmyoKedBUoX6w6iuXGdikk-vw3Jlb0cA&callback=initMap"
   ></script>
-  <script src="report.js"></script>
 </html>
