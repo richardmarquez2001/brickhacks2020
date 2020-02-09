@@ -10,7 +10,7 @@
   font-family: "Montserrat";
   height: 50px;
   border-bottom: black solid 2px;
-  background-color: rgb(173, 188, 255);
+  background-color: white;
   justify-content: space-between;
   align-items: center;
 }
@@ -39,7 +39,7 @@ header {
 }
 
 form {
-  background-color: rgb(173, 188, 255);
+  background-color: white;
   font-family: "Montserrat";
   position: absolute;
   top: 50%;
@@ -65,22 +65,24 @@ form {
   background-color: none;
   border-radius: 5px;
   height: 3.5vh;
-  width: 10vh;
+  width: 20vh;
 }
 
-#search-input:focus {
-  width: 35vh;
+#search-input:hover {
+  width: 29vh;
+  height: 4.4vh;
 }
+
 input {
   font-family: "Montserrat";
-  background-color: rgb(193, 204, 255);
+  background-color: #efefef;
   border: none;
   transition: all 0.3s;
 }
 
 .text-input {
   margin-bottom: 10px;
-  border-bottom: black solid 1px;
+  border-bottom: #efefef solid 1px;
   border-radius: 5px;
   padding: 3px;
 }
@@ -95,7 +97,11 @@ input {
 }
 
 input:hover {
-  border-color: white;
+  border-color: black;
+}
+
+input:focus {
+  outline: none;
 }
 
 #map {
