@@ -1,0 +1,32 @@
+{
+  {
+    "longitude": "-79.380480",
+    "latitude": "43.657780",
+    "incident_type": "crime",
+    "incident_time": ""
+  },
+  {
+    "longitude": "-79.3771282",
+    "latitude": "43.6573896",
+    "incident_type": "robbery",
+    "incident_time": "",
+  },
+  {
+    "longitude": "-79.3856867",
+    "latitude": "43.6707855",
+    "incident_type": "assault",
+    "incident_time": "",
+  },
+  {
+    "longitude": "-79.3604569",
+    "latitude": "43.6607056",
+    "incident_type": "death by redbull",
+    "incident_time": "",
+  },
+  {
+    "longitude": "-79.4237709",
+    "latitude": "43.63980217",
+    "incident_type": "robbery",
+    "incident_time": "",
+  },
+}
