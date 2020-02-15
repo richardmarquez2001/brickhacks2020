@@ -1,4 +1,4 @@
-# Get me Home!
+# Stay Safe!
 
 ## Inspiration
 Coming into BrickHacks, we wanted to create a project that would help out the community. While brainstorming, we all noticed that certain areas around our campus were unsafe due to the high crime rate. Also, our university provides information about security incidents around campus. We decided to create a web application that would make students feel safer by showing the areas around the campus that have security incidents. Using this, students can infer which areas are deemed more unsafe than others.
