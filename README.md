@@ -20,3 +20,10 @@ We’ve learnt a lot about how APIs work, how to use databases, and how to desig
 
 ## What's next for ‘Get Me Home Safe’
 In the future, we’d plan to implement this with The Toronto Police’s dataset, to get more reports about security incidents throughout the entire city. Also, this web application will eventually be moved onto a mobile app, or integrate with an existing mobile app related to the city.
+
+## Collaborators:
+* [@oceansam](https://github.com/oceansam)
+* [@richardmarquez2001](https://github.com/richardmarquez2001)
+* [@dylanle18](https://github.com/dylanle18)
+* [@aloinn](https://github.com/Aloinn)
+* Shoutout to Kyle Choo Mang, without him this couldn't be possible :)
