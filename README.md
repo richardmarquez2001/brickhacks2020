@@ -1,4 +1,4 @@
-# Stay Safe!
+# Safe Space!
 
 ## Inspiration
 Coming into BrickHacks, we wanted to create a project that would help out the community. While brainstorming, we all noticed that certain areas around our campus were unsafe due to the high crime rate. Also, our university provides information about security incidents around campus. We decided to create a web application that would make students feel safer by showing the areas around the campus that have security incidents. Using this, students can infer which areas are deemed more unsafe than others.
@@ -26,4 +26,6 @@ In the future, we’d plan to implement this with The Toronto Police’s dataset
 * [@richardmarquez2001](https://github.com/richardmarquez2001)
 * [@dylanle18](https://github.com/dylanle18)
 * [@aloinn](https://github.com/Aloinn)
-* Shoutout to Kyle Choo Mang, without him this couldn't be possible :)
+
+
+Shoutout to Kyle Choo Mang, without him this couldn't be possible :)
